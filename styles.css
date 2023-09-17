@@ -34,31 +34,42 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1rem;
 }
 nav > li {
     list-style: none;
     margin-inline: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 }
+
+.logo{
+    width: 5%;
+}
+
 nav li a:hover{
     color: #FD7F20;
 }
 
 @media (max-width:30em) {
 
-
     header{
         display: flex;
         justify-content: space-evenly;
     }
+
     nav{
         display: flex;
         justify-content: flex-end;
+        
     }
+    
     nav > li {
-        margin: 1rem;
+        margin: 0.8rem;
         font-size: 0.8rem;
+    }
+    .logo{
+        width: 10%;
     }
 }
 
@@ -89,8 +100,10 @@ nav li a:hover{
 
 @media (max-width:30em){
     .hero{
-        min-height: 100vh;
         
+    }
+    .hero-image{
+     display: none;
     }
 }
 
@@ -155,7 +168,7 @@ nav li a:hover{
     border-radius: 10px;
     margin-inline:0.5rem;
 }
-i.fa
+i.fa,i.fa-brands
 {   
     font-size: 40px;
 }
@@ -176,10 +189,10 @@ i.fa
 }
 #tw
 {
-    color: #00acff;
+    color: #fff;
     text-shadow: 0 0 30px #00acff;
 }
-.btn.in-btn
+.btn .in-btn
 {
     box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
 }
@@ -189,6 +202,7 @@ i.fa
     transform: scale(1.2);
     box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
 }
+
 .btn.gt-btn
 {
     box-shadow: 0 20px 20px -17px rgba(256,256,256,0.53);
@@ -255,12 +269,15 @@ i.fa
         height: 2rem;
         width: 2rem;
     }
-    i.fa{   
+    i.fa,i.fa-brands{   
         font-size: 30px;
     }
     .about-right>img{
         width: 50%;
         margin: 1.2rem;
+    }
+    .about p{
+        margin-bottom: 40px;
     }
 }
 
@@ -472,6 +489,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 .footer-content {
