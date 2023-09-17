@@ -38,6 +38,8 @@ nav{
 nav > li {
     list-style: none;
     margin-inline: 1rem;
+    font-size: 1.2rem;
+    
 }
 nav li a:hover{
     color: #FD7F20;
@@ -53,6 +55,10 @@ nav li a:hover{
     nav{
         display: flex;
         justify-content: flex-end;
+    }
+    nav > li {
+        margin: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -125,6 +131,7 @@ nav li a:hover{
 }
 .about-right>img{
  width: 60%;
+ margin: 3rem;
 }
 /* about social icons */
 .social-icons
@@ -133,11 +140,12 @@ nav li a:hover{
     justify-content: space-between;
     align-items: start;
     gap: 1rem;
+    
 }
 .btn
 {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -148,11 +156,11 @@ nav li a:hover{
     margin-inline:0.5rem;
 }
 i.fa
-{
-    font-size: 44px;
+{   
+    font-size: 40px;
 }
 #in
-{
+{   
     color: #006fff;
     text-shadow: 0 0 30px #006fff;
 }
@@ -175,6 +183,7 @@ i.fa
 {
     box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
 }
+
 .btn.in-btn:hover
 {
     transform: scale(1.2);
@@ -207,7 +216,9 @@ i.fa
 {
     transform: scale(1.2);
     box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+
 }
+
 @media (max-width:60em) {
     .about {
         margin:auto;
@@ -226,6 +237,9 @@ i.fa
         align-items: center;
         gap:2rem;
     }
+    .about-right>img{
+        width: 30%;
+    }
     .about-p{
         max-width: 70%;
         margin: 0 auto;
@@ -236,7 +250,19 @@ i.fa
     }
 }
 
-
+@media (max-width:30em){    
+    .btn{
+        height: 2rem;
+        width: 2rem;
+    }
+    i.fa{   
+        font-size: 30px;
+    }
+    .about-right>img{
+        width: 50%;
+        margin: 1.2rem;
+    }
+}
 
 /* projects */
 .projects{
