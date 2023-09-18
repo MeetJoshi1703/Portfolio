@@ -51,6 +51,11 @@ nav li a:hover{
     color: #FD7F20;
 }
 
+nav li a:active{
+    text-decoration: none;
+    color: white;
+}
+
 @media (max-width:30em) {
 
     header{
@@ -123,9 +128,7 @@ nav li a:hover{
 }
 
 @media (max-width:30em){
-    .hero{
-        
-    }
+    
     .hero-image{
      display: none;
     }
