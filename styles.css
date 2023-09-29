@@ -7,7 +7,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: monospace;
+    font-family: "Barlow",sans-serif;
 }
 img {
     max-width: 100% ;
@@ -102,6 +102,15 @@ nav li a:active{
       transform-origin: left;
   }
 
+
+
+@media (max-width:24em) {
+    nav > li{
+        font-size: 0.7rem;
+    }
+}
+
+
 .hero{
     padding: 1rem;
     height: 90vh;
@@ -159,7 +168,6 @@ nav li a:active{
     margin-left: 10%;
     text-align: justify;
     font-size: 1rem;
-    line-height: 25px;
     line-height: 2rem;
     
 }
@@ -286,8 +294,8 @@ i.fa,i.fa-brands
         margin: 0 auto;
         text-align:left;
         font-size: 1rem;
-        line-height: normal;
-        
+        line-height:1.5rem;
+                
     }
 }
 
@@ -311,6 +319,7 @@ i.fa,i.fa-brands
 /* projects */
 .projects{
     min-height: 100vh;
+    
 }
 .projects h1{
     display:inline;
@@ -323,7 +332,7 @@ i.fa,i.fa-brands
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #080808;  
+  
 }
 
 .container
@@ -351,7 +360,7 @@ i.fa,i.fa-brands
 
 .smartbrain-content li , .task-manager-content li, .discord-clone-content li{
     list-style: none;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 10px;
     line-height: 1.4em;
 }
@@ -374,9 +383,14 @@ i.fa,i.fa-brands
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
-  font-weight: 200;
+  font-weight: 300;
 }
- 
+ .container .box .content h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    
+ }
+
 .container .box .content p
 {
   font-size: 1.1em;
@@ -387,13 +401,13 @@ i.fa,i.fa-brands
 .container .box .content a
 {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fff;
   background: #FD7F20;
   padding: 10px;
   border-radius: 4px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 100;
   margin-top: 5px;
 }
 
@@ -458,6 +472,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
+    font-family:Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -508,7 +523,7 @@ footer {
     background-color: #101820;
     color: #ecf0f1;
     padding: 50px 0;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     padding: 1rem 0 1rem 0;
 }
 
@@ -540,7 +555,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.footer-contact p {
+.footer-contact p{
     margin: 0;
     line-height: 1.6;
 }
@@ -587,7 +602,7 @@ footer {
     opacity: 0.7;
 }
 
-#about,#projects{
+#about,#projects,#contactme{
     scroll-margin-top: 10vh;
 }
 @media (max-width:60em){
@@ -601,6 +616,7 @@ footer {
     #about,#projects{
         scroll-margin-top:0;
     }
+    
 }
 
 

@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand&family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/4a6b001940.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
     <title>Meet Joshi</title>
 </head>
 <body>
@@ -13,7 +19,7 @@
         <img src="./assets/logo.png" alt="logo" width="5%" class="logo">
         <Nav>
             <li><a href="#home" class="fancy-link">Home</a></li>
-            <li><a href="#about" class="fancy-link">About</a></li>
+            <li><a href="#about" class="fancy-link">About Me</a></li>
             <li><a href="#projects" class="fancy-link">Projects</a></li>
             <li><a href="#contactme" class="fancy-link">Contact Me</a></li>
         </Nav>
@@ -28,11 +34,12 @@
            <img src="./assets/bolt.png" alt="heroimg" width="100%">
         </div>
     </div>
+    
 
     <div class="about" id="about">
-        <h1>About me</h1>
+        <h1>About Me</h1>
         <div class="about-content">
-        <p class="about-p">Hello there, myself Meet Joshi, a passionate Full Stack Developer    with a portfolio of diverse projects cultivated through various platforms. Committed to constant learning and embracing the latest technological trends to enhance solutions. Eager to take on fresh challenges and contribute to new projects. Let's collaborate and innovate together!
+        <p class="about-p">Hello there, myself Meet Joshi, a passionate Full Stack Developer with a portfolio of diverse projects cultivated through various platforms. Committed to constant learning and embracing the latest technological trends to enhance solutions. Eager to take on fresh challenges and contribute to new projects. Let's collaborate and innovate together!
         </p>
         <div class="about-right">
           <img src="./assets/profile2.png" alt="proile image" >  
@@ -98,18 +105,18 @@
             <div class="box">
               
               <div class="content">
-                <img src="./assets/smartbrain.png" alt="img">
-                <h2>Discord-clone</h2>
+                <img src="./assets/blogpost.png" alt="blogpost">
+                <h2>Blog-Post</h2>
                 <div class="discord-clone-content">
                     <h3>Features:</h3>
                     <ul>
-                        <li>-User Authentication</li>
-                        <li>-PostgreSQL Database</li>
+                        <li>-Create,Delete,Edit Posts</li>
+                        <li>-Responsive Design</li>
                         <li>-React frontend</li>
                         <li>-Node.js Backend</li>
                     </ul>
                 </div>
-                <a href="#">View-Source-Code</a>
+                <a href="https://github.com/MeetJoshi1703/Blogpost.git" target="_blank">View-Source-Code</a>
               </div>
             </div>
           </div>
@@ -150,12 +157,13 @@
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contactme">Contact Me</a></li>
-                    </ul>
+                        <ul class="dropdown-content">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contactme">Contact Me</a></li>
+                        </ul>
+                    
                 </div>
                 <div class="footer-social">
                     <h3>Follow Me</h3>
@@ -187,6 +195,7 @@
                 });
             });
         });
+        
     </script>
 
 </body>
